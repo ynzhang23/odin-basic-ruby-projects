@@ -4,7 +4,6 @@ require 'pry-byebug'
 def stock_picker(stock_prices)
     current_highest_price = 0
     buy_sell = {}
-    # reverse the array so only later date's can minus earlier date's price
     stock_prices.reverse.each_with_index do |buy_price, buy_price_index|
         stock_prices.reverse.drop(buy_price_index + 1).each_with_index do |sell_price, sell_price_index|
             stock_prices.drop(buy_price_index + 1)
