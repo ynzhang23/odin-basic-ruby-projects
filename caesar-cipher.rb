@@ -18,4 +18,3 @@ def caesar_cipher(input, shift_factor)
 end
 
 p caesar_cipher("Hello", 3)
-
