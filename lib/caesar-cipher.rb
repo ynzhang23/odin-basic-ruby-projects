@@ -12,6 +12,8 @@ def caesar_cipher(input, shift_factor)
       char.between?(65, 90) ? char - shift_factor : char - shift_factor + 26
     elsif char.between?(97, 122)
       char.between?(97, 122) ? char - shift_factor : char - shift_factor + 26
+    else
+      char
     end
   end
 
