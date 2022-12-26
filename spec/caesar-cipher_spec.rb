@@ -9,7 +9,8 @@ describe 'caesar_cipher' do
   it 'encodes upper case letters' do
     expect(caesar_cipher('HELLO', 3)).to eq('EBIIL')
   end
-  xit 'does not encode numbers and symbols' do
+  it 'does not encode numbers and symbols' do
+    expect(caesar_cipher('H!@eLLo, hello', 3)).to eq('E!@bIIl, ebiil')
   end
   xit 'encodes both upper case and lower case letters' do
   end
