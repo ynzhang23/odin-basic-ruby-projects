@@ -1,4 +1,4 @@
-#spec/caesar-cipher_spec.rb
+# spec/caesar_cipher_spec.rb
 
 require './lib/caesar-cipher.rb'
 
