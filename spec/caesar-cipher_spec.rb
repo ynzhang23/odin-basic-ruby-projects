@@ -3,11 +3,11 @@
 require './lib/caesar-cipher.rb'
 
 describe 'caesar_cipher' do
-
   it 'encodes lower case letters' do
-    expect(caesar_cipher('hello', 3)).to eql('ebiil')
+    expect(caesar_cipher('hello', 3)).to eq('ebiil')
   end
-  xit 'encodes upper case letters' do
+  it 'encodes upper case letters' do
+    expect(caesar_cipher('HELLO', 3)).to eq('EBIIL')
   end
   xit 'does not encode numbers and symbols' do
   end
