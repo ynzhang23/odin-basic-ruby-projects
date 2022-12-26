@@ -14,6 +14,8 @@ def caesar_cipher(input, shift_factor)
       char.between?(97, 122) ? char - shift_factor : char - shift_factor + 26
     end
   end
+
+  encoded.map {|ascii_code| ascii_code.chr}.join
 end
 
 p caesar_cipher('Hello', 3)
