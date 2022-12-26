@@ -12,6 +12,4 @@ describe 'caesar_cipher' do
   it 'does not encode numbers and symbols' do
     expect(caesar_cipher('H!@eLLo, hello', 3)).to eq('E!@bIIl, ebiil')
   end
-  xit 'encodes both upper case and lower case letters' do
-  end
 end
